@@ -30,7 +30,7 @@ public class Triangulo extends Figuras {
     
     @Override
     public void CalcularArea(){
-        this.setArea(this.basse*this.altura/2);
+        this.setArea(this.base*this.altura/2);
         
     }
             
