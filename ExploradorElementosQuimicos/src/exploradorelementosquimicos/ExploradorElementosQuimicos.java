@@ -9,7 +9,7 @@ package exploradorelementosquimicos;
  * @author ARMANDO BETANCOURT S
  */
 public class ExploradorElementosQuimicos {
-
+    public static Elemento elementos[] = new Elemento[118];
     /**
      * @param args the command line arguments
      */
