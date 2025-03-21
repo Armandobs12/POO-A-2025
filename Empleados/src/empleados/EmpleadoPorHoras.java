@@ -9,41 +9,50 @@ package empleados;
  * @author ARMANDO BETANCOURT S
  */
 public class EmpleadoPorHoras {
-     private String Nombre;
-    private float  Hora;
+
+    private String nombre;
+    private double tarifaPorHora;
+    private int horasTrabajadas;
+    
+
+    public double getTarifaPorHora() {
+        return tarifaPorHora;
+    }
+
+    public void setTarifaPorHora(double tarifaPorHora) {
+        this.tarifaPorHora = tarifaPorHora;
+    }
+
+    public int getHorasTrabajadas() {
+        return horasTrabajadas;
+    }
+
+    public void setHorasTrabajadas(int horasTrabajadas) {
+        this.horasTrabajadas = horasTrabajadas;
+    }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        this.Nombre = nombre;
-    }
-
-    public float getMHora() {
-        return Hora;
-    }
-
-    public void setHora(float Mensual) {
-        this.Hora = Hora;
+        this.nombre = nombre;
     }
     
-    public EmpleadoPorHoras(){
-        Nombre = "Juan mecanico";
-        Hora = 18900f;
-        
-    }
-    public void imprimirDatos(){
-        System.out.println("**-------------------------------**");
-        System.out.println("**nombre: " + this.getNombre());
-        System.out.println("**salario: $" + this.getHora());
-        
-        System.out.println("**-------------------------------**");
+    public EmpleadoPorHoras( String nombre, double tarifaPorHora, int horasTrabajadas) {
+      this.nombre = nombre;
+        this.tarifaPorHora = tarifaPorHora;
+        this.horasTrabajadas = horasTrabajadas;
     }
     
-      public EmpleadoPorHoras( String Nombre, float Mensual){
-       this.Nombre=Nombre;
-       this.Hora=Hora;
+     public void mostrarSalario() {
+        System.out.println("Empleado: " + nombre + ", Salario: $" + calcularSalario());
+        System.out.println("-------------------------------");
+        
     }
+    public double calcularSalario() {
+        return tarifaPorHora * horasTrabajadas;
+    }
+    
     
 }

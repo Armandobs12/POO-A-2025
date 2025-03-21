@@ -35,7 +35,7 @@ public class EmpleadoAsalariado {
     }
     public void imprimirDatos(){
         System.out.println("**-------------------------------**");
-        System.out.println("**nombre: " + this.getNombre());
+        System.out.println("**Empleado: " + this.getNombre());
         System.out.println("**salario: $" + this.getMensual());
         
         System.out.println("**-------------------------------**");

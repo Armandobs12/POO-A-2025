@@ -11,6 +11,10 @@ package empleados;
 public class Empleados {
 private String nombre;
     /**
+     * 
+     *  * 
+     * 
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -30,7 +34,18 @@ private String nombre;
                        SA3.imprimirDatos();
                        System.out.println("---------------------------------");
                        
-        System.out.println("Personal * hora");               
+        System.out.println("Personal * hora");  
+        EmpleadoPorHoras emp;
+       EmpleadoPorHoras emp1 = new EmpleadoPorHoras("Juan mecanico", 19, 149);
+        EmpleadoPorHoras emp2 = new EmpleadoPorHoras("Miguel Angel", 17, 180);
+       EmpleadoPorHoras emp3 = new EmpleadoPorHoras("Rafael Quintero", 21, 150);
+       
+       
+        emp1.mostrarSalario();
+        emp2.mostrarSalario();
+        emp3.mostrarSalario();
+        
+        System.out.println("Eso es todo por el dia de hoy");
         // TODO code application logic here
     }
     
