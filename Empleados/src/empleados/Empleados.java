@@ -6,7 +6,7 @@ package empleados;
 
 /**
  *
- * @author ARMANDO BETANCOURT S
+ * @author ARMANDO BETANCOURT S, Juan Carlos Zavaleta Gonzales, Luis Angel Mejia, Victor Javier Varona Castro
  */
 public class Empleados {
 private String nombre;
