@@ -29,5 +29,7 @@ public class MyWorld extends World
         Heroe heroe = new Heroe();
         addObject(heroe,336,369);
         heroe.setLocation(370,628);
+       
+       
     }
 }

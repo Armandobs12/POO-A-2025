@@ -12,6 +12,10 @@ public class Heroe extends Actor
      * Act - do whatever the Heroe wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private final int LIMITE_RAFAGA=15;
+    private final int LIMITE_TIEMPO_OBSTACULO=50;
+    private int tiempoObstaculo;
+    private int rafaga;
     public void act()
     {
         
@@ -33,12 +37,35 @@ public class Heroe extends Actor
             this.setLocation(this.getX(),this.getY()+5);
         
         }
+        if(Greenfoot.isKeyDown("space")){
+            if(rafaga==0){
+            World mundo =this.getWorld();
+            disparo d = new disparo();
+            mundo.addObject(d,this.getX()+40,this.getY()-125);
+            this.rafaga = LIMITE_RAFAGA;
         
+        }else
+        this.rafaga--;
     }
+       
+    
+    
+    //Creacion de obstaculos
+    if(tiempoObstaculo==0){
+     World mundo = this.getWorld();
+     int posx = (int)(Math.random()*700)+50;
+     obstaculo o = new obstaculo();
+     mundo.addObject(o, posx,30);//eje y mayor a la posicion de la eliminaacion de bala
+     
+       }else
+       tiempoObstaculo--;
+}
     public Heroe(){
      this.setRotation(90);
+     this.rafaga=10;
      GreenfootImage img = this.getImage();
-     img.scale(img.getWidth()/7, img.getHeight()/7);
+     img.scale(img.getWidth()/3, img.getHeight()/3);
      this.setImage(img);
     }
+    
 }
