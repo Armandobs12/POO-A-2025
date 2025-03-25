@@ -16,6 +16,14 @@ public class disparo extends Actor
     {
         // Add your action code here.
         this.setLocation(this.getX(),this.getY()-10);
+        Actor x = null; 
+         if ((x=this.getOneIntersectingObject(obstaculo.class))!=null){
+           World mundo = this.getWorld();
+           mundo.removeObject(this);
+           mundo.removeObject(x);
+        }else
+        
+        
         if (this.getY()<20){
             World mundo = this.getWorld();
             mundo.removeObject(this);
@@ -26,5 +34,11 @@ public class disparo extends Actor
      GreenfootImage img = this.getImage();
      img.scale(img.getWidth()/3, img.getHeight()/3);
      this.setImage(img);
+     
+     GreenfootSound sonido = new GreenfootSound("Kamehameha Green Screen + Sound Effect [1080p - 1920x1080].mp3");
+     sonido.setVolume(80);
+     sonido.play();
     }
+    
+    
 }

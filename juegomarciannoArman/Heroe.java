@@ -55,7 +55,9 @@ public class Heroe extends Actor
      World mundo = this.getWorld();
      int posx = (int)(Math.random()*700)+50;
      obstaculo o = new obstaculo();
-     mundo.addObject(o, posx,30);//eje y mayor a la posicion de la eliminaacion de bala
+     mundo.addObject(o, posx,30);
+     this.tiempoObstaculo = LIMITE_TIEMPO_OBSTACULO;
+     //eje y mayor a la posicion de la eliminaacion de bala
      
        }else
        tiempoObstaculo--;

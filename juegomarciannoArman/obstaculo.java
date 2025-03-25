@@ -15,5 +15,16 @@ public class obstaculo extends Actor
     public void act()
     {
         // Add your action code here.
+        this.setLocation(this.getX(),this.getY()+10);
+        if(this.getY()>680){
+         World mundo = this.getWorld();
+            mundo.removeObject(this); 
+        }
+        
+    }
+    public obstaculo(){
+     GreenfootImage img = this.getImage();
+     img.scale(img.getWidth()/4, img.getHeight()/4);
+     this.setImage(img);
     }
 }
