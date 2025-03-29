@@ -17,10 +17,14 @@ public class disparo extends Actor
         // Add your action code here.
         this.setLocation(this.getX(),this.getY()-10);
         Actor x = null; 
-         if ((x=this.getOneIntersectingObject(obstaculo.class))!=null){
+         
+        if ((x=this.getOneIntersectingObject(obstaculo.class))!=null){
            World mundo = this.getWorld();
-           mundo.removeObject(this);
+           explosion  e= new explosion();
+           mundo.addObject(e,x.getX(), x.getY());
            mundo.removeObject(x);
+           mundo.removeObject(this);
+           
         }else
         
         
