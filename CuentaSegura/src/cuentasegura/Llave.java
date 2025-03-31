@@ -4,38 +4,29 @@ package cuentasegura;
  *
  * @author Carlos y modificado por armando 
  */
-public class Llave extends LlavePrivada{
-    private String codigo;
-    private int llaveNumerica;
-    private String numeroControl;
+public class Llave {
     
-    public String generarLlave(String codigo){
-        return this.codigo;
+    
+    public String generarLlave(String cadena) {
+        return cadena; 
     }
-  
- 
-    
-    
-    public int procesarCadena(String cadena) {
-        int suma = 0;
-        for (char c : numeroControl.toCharArray()) {
-            if (Character.isDigit(c)) {
-                suma += Character.getNumericValue(c);
-            }
-        }
-        return suma;
-    }
-
    
+    public static void main(String[] args) {
+        String numeroDeControl = "24070011"; // Reemplaza con tu número real
 
-    public int getLlaveNumerica() {
-         this.llaveNumerica = procesarCadena(numeroControl);
-        return llaveNumerica;
-    }
+      
+        LlavePrivada llavePrivada = new LlavePrivada();
+        String llaveNumerica = llavePrivada.generarLlave(numeroDeControl);
 
-    public Llave(){
-        this.codigo="01";
-        this.numeroControl = "24070011";
+       
+        LlavePublica llavePublica = new LlavePublica();
+        String llaveGenerada = llavePublica.generarLlave(numeroDeControl);
+
+       
+        String llaveFinal = llaveGenerada + "-" + llaveNumerica;
+
+        
+        System.out.println("Llave final generada: " + llaveFinal);
     }
-    
 }
+
