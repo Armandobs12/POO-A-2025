@@ -16,10 +16,10 @@ public class LlavePublica extends Llave {
         for (char c : cadena.toCharArray()) {
             if (Character.isDigit(c)) {
                 int numero = Character.getNumericValue(c);
-                char letra = (char) ('A' + numero); // Convierte número a letra
+                char letra = (char) ('A' + numero); 
                 nuevaLlave.append(letra);
             } else {
-                nuevaLlave.append(c); // Mantiene otros caracteres sin cambios
+                nuevaLlave.append(c); 
             }
         }
 
