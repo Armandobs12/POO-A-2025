@@ -9,6 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     private GreenfootSound  sonido;
+    public static Vida[] vidas;
+    public static int indiceVida;
+    public static  puntaje puntaje;
     
     /**
      * Constructor for objects of class MyWorld.
@@ -37,7 +40,27 @@ public class MyWorld extends World
         Heroe heroe = new Heroe ();
         addObject(heroe,336,369);
         heroe.setLocation(370,628);
-       
+        vidas = new Vida[5];
+        int separacion = 5;
+        indiceVida = 3;
+
+        for(int i=0;i<3;i++){
+            vidas[i] = new Vida();
+            addObject(vidas[i],separacion+=30,40);
+        }
+
+        //vidas[0] = new Vida();
+        //addObject(vidas[0],separacion+=30,34);
+
+        //[1] = new Vida();
+        //addObject(vidas[1],separacion+=30,34);
+
+        //vidas[2] = new Vida();
+        //addObject(vidas[2],separacion+=30,34);
+
+        
+        puntaje puntaje = new puntaje();
+        addObject(puntaje,767,24);
        
     }
    

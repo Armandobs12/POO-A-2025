@@ -12,7 +12,7 @@ public class Llave {
     }
    
     public static void main(String[] args) {
-        String numeroDeControl = "24070011"; // Reemplaza con tu número real
+        String numeroDeControl = "24070011"; 
 
       
         LlavePrivada llavePrivada = new LlavePrivada();

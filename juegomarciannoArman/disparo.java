@@ -19,6 +19,7 @@ public class disparo extends Actor
         Actor x = null; 
          
         if ((x=this.getOneIntersectingObject(obstaculo.class))!=null){
+        MyWorld.puntaje.agregarPuntos(10);
            World mundo = this.getWorld();
            explosion  e= new explosion();
            mundo.addObject(e,x.getX(), x.getY());

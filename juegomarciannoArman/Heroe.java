@@ -61,6 +61,24 @@ public class Heroe extends Actor
      
        }else
        tiempoObstaculo--;
+       Actor ox =null;
+       
+
+       if((ox=this.getOneIntersectingObject(obstaculo.class))!=null){
+        World mundo = this.getWorld();
+        
+        explosion ex = new explosion(); 
+        mundo.addObject(ex,ox.getX(), ox.getY());
+        mundo.removeObject(ox);
+         
+        mundo.removeObject(MyWorld.vidas[MyWorld.indiceVida-1]);
+         MyWorld.indiceVida--;
+         if(MyWorld.indiceVida==0){
+             Greenfoot.stop();
+             
+        }
+    }
+       
 }
     public Heroe(){
      this.setRotation(90);
