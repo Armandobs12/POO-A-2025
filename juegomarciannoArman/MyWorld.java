@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class MyWorld here.
@@ -59,7 +59,7 @@ public class MyWorld extends World
         //addObject(vidas[2],separacion+=30,34);
 
         
-        puntaje puntaje = new puntaje();
+        puntaje = new puntaje();
         addObject(puntaje,767,24);
        
     }
