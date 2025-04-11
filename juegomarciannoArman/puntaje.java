@@ -21,7 +21,9 @@ public class puntaje extends Actor
     Puntaje+=puntos;
     actualizarPuntaje();
     }
-    
+    public int getpuntos(){
+    return this.Puntaje;
+    }
     
     public void actualizarPuntaje(){
     GreenfootImage fondo =  new GreenfootImage(""+Puntaje,30,Color.BLACK,Color.YELLOW);//this.getImage();

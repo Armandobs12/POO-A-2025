@@ -41,7 +41,7 @@ public class disparo extends Actor
      this.setImage(img);
      
      GreenfootSound sonido = new GreenfootSound("Kamehameha Green Screen + Sound Effect [1080p - 1920x1080].mp3");
-     sonido.setVolume(80);
+     sonido.setVolume(30);
      sonido.play();
     }
     

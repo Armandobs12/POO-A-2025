@@ -29,7 +29,7 @@ public class explosion extends Actor
     }
     public explosion(){
         GreenfootSound sonido = new GreenfootSound("explocion.mp3");
-        sonido.setVolume(80);
+        sonido.setVolume(30);
         sonido.play();
         this.tam =1;
      GreenfootImage img = new GreenfootImage("exooion-removebg-preview.png");

@@ -22,13 +22,24 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 700, 1); 
         prepare();
-        sonido = new GreenfootSound("Dragon Ball Z Música de Pelea..mp3");
+        sonido = new GreenfootSound("Skrillex & Damian Jr. Gong Marley - Make It Bun Dem [OFFICIAL VIDEO].mp3");
         //sonido.play();
         //sonido.setVolume(50);
     }
+    private int puntosVida=30;
         public void act (){
         if(!sonido.isPlaying())
            sonido.play();
+
+           
+        if(puntaje.getpuntos()>puntosVida){
+            if(indiceVida<5){
+         int posx = (int)(Math.random()*700)+50;
+         NuevaVida o = new NuevaVida();
+         this.addObject(o, posx,30);
+         puntosVida+=puntosVida;
+        }
+      }
     }
     
     /**
@@ -58,10 +69,12 @@ public class MyWorld extends World
         //vidas[2] = new Vida();
         //addObject(vidas[2],separacion+=30,34);
 
-        
         puntaje = new puntaje();
         addObject(puntaje,767,24);
-       
+
+        Jefe jefe = new Jefe();
+        addObject(jefe,329,87);
+        jefe.setLocation(418,73);
     }
    
 }

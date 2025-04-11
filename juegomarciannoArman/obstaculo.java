@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class obstaculo here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Armando) 
+ * @version (1)
  */
 public class obstaculo extends Actor
 {

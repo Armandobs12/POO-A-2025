@@ -13,8 +13,8 @@ public class Heroe extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private final int LIMITE_RAFAGA=15;
-    private final int LIMITE_TIEMPO_OBSTACULO=50;
-    private int tiempoObstaculo;
+    private final int LIMITE_TIEMPO_OBSTACULO=60;
+    private int  tiempoObstaculo;
     private int rafaga;
     public void act()
     {
@@ -78,7 +78,16 @@ public class Heroe extends Actor
              
         }
     }
-       
+    
+     Actor v =null;
+     
+        if((v=this.getOneIntersectingObject(NuevaVida.class))!=null){
+              World mundo = this.getWorld();
+              mundo.removeObject(v);
+              MyWorld.vidas[MyWorld.indiceVida] = new  Vida();
+              mundo.addObject(MyWorld.vidas[MyWorld.indiceVida],(30*(MyWorld.indiceVida+1))+5,40);
+              MyWorld.indiceVida++;
+        }
 }
     public Heroe(){
      this.setRotation(90);
