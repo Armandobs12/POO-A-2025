@@ -9,21 +9,21 @@ package exploradorelementosquimicos;
  * @author ARMANDO BETANCOURT S
  */
 public class Elemento {
-    private String  nombre;
-    private int natomico;
-    private double PesoAtomico;
-    private String Simbolo;
-    private int[] NivelesEectronicos;
-    private int[] EtadoOxidacion;
-     private double masaAtomica;
-    private int distribucionElectronicaorbital;
-    private int periodo;
-    private int serie;
-    private int grupo;
-    private String familia;
-    private String estado;
-    private String notas;
-    private int anioeDescubrimiento;
+ private String nombre;
+ private int numatomico;//numero atomico
+ private double pesoAtomico;
+ private String simbolo;
+ private int[] nivelesElectronicos;
+ private int[]estadodeOxidacion;
+ private double masaAtomica;
+ private int disElectronicasOrbitas;
+ private int periodo;
+ //private int serie; corresponde  grupo.
+ private int grupo;
+ private String familia;
+ private String estado;
+ private String notas;
+ private int descubrimiento;//año de descubrimiento
 
     public String getNombre() {
         return nombre;
@@ -33,44 +33,44 @@ public class Elemento {
         this.nombre = nombre;
     }
 
-    public int getNatomico() {
-        return natomico;
+    public int getNumatomico() {
+        return numatomico;
     }
 
-    public void setNatomico(int natomico) {
-        this.natomico = natomico;
+    public void setNumatomico(int numatomico) {
+        this.numatomico = numatomico;
     }
 
     public double getPesoAtomico() {
-        return PesoAtomico;
+        return pesoAtomico;
     }
 
-    public void setPesoAtomico(double PesoAtomico) {
-        this.PesoAtomico = PesoAtomico;
+    public void setPesoAtomico(double pesoAtomico) {
+        this.pesoAtomico = pesoAtomico;
     }
 
     public String getSimbolo() {
-        return Simbolo;
+        return simbolo;
     }
 
-    public void setSimbolo(String Simbolo) {
-        this.Simbolo = Simbolo;
+    public void setSimbolo(String simbolo) {
+        this.simbolo = simbolo;
     }
 
-    public int[] getNivelesEectronicos() {
-        return NivelesEectronicos;
+    public int[] getNivelesElectronicos() {
+        return nivelesElectronicos;
     }
 
-    public void setNivelesEectronicos(int[] NivelesEectronicos) {
-        this.NivelesEectronicos = NivelesEectronicos;
+    public void setNivelesElectronicos(int[] nivelesElectronicos) {
+        this.nivelesElectronicos = nivelesElectronicos;
     }
 
-    public int[] getEtadoOxidacion() {
-        return EtadoOxidacion;
+    public int[] getEstadodeOxidacion() {
+        return estadodeOxidacion;
     }
 
-    public void setEtadoOxidacion(int[] EtadoOxidacion) {
-        this.EtadoOxidacion = EtadoOxidacion;
+    public void setEstadodeOxidacion(int[] estadodeOxidacion) {
+        this.estadodeOxidacion = estadodeOxidacion;
     }
 
     public double getMasaAtomica() {
@@ -81,12 +81,12 @@ public class Elemento {
         this.masaAtomica = masaAtomica;
     }
 
-    public int getDistribucionElectronicaorbital() {
-        return distribucionElectronicaorbital;
+    public int getDisElectronicasOrbitas() {
+        return disElectronicasOrbitas;
     }
 
-    public void setDistribucionElectronicaorbital(int distribucionElectronicaorbital) {
-        this.distribucionElectronicaorbital = distribucionElectronicaorbital;
+    public void setDisElectronicasOrbitas(int disElectronicasOrbitas) {
+        this.disElectronicasOrbitas = disElectronicasOrbitas;
     }
 
     public int getPeriodo() {
@@ -97,13 +97,13 @@ public class Elemento {
         this.periodo = periodo;
     }
 
-    public int getSerie() {
-        return serie;
-    }
+   // public int getSerie() {
+     //   return serie;
+    //}
 
-    public void setSerie(int serie) {
-        this.serie = serie;
-    }
+    //public void setSerie(int serie) {
+      //  this.serie = serie;
+    //}
 
     public int getGrupo() {
         return grupo;
@@ -137,19 +137,20 @@ public class Elemento {
         this.notas = notas;
     }
 
-    public int getAnioeDescubrimiento() {
-        return anioeDescubrimiento;
+    public int getDescubrimiento() {
+        return descubrimiento;
     }
 
-    public void setAnioeDescubrimiento(int anioeDescubrimiento) {
-        this.anioeDescubrimiento = anioeDescubrimiento;
+    public void setDescubrimiento(int descubrimiento) {
+        this.descubrimiento = descubrimiento;
     }
-    
-    
-    
-    
-    
-    
-    
-    
+     public static int []Extraervalores(String origen){
+         String ne[]=origen.split(",");//ne =["2","4","7"]
+               int nee[]=new int[ne.length];// nee=[0,0,0]
+               for(int i=0;i<ne.length;i++){
+                   nee[i]=Integer.parseInt(ne[i]);
+               }
+               return nee;
+     }
+ 
 }

@@ -77,9 +77,42 @@ public class Heroe extends Actor
              Greenfoot.stop();
              
         }
-    }
+        
+        
+        }
+        if((ox=this.getOneIntersectingObject(Mini.class))!=null){
+        World mundo = this.getWorld();
+        
+        explosion ex = new explosion(); 
+        mundo.addObject(ex,ox.getX(), ox.getY());
+        mundo.removeObject(ox);
+         
+        mundo.removeObject(MyWorld.vidas[MyWorld.indiceVida-1]);
+         
+        MyWorld.indiceVida--;
+         if(MyWorld.indiceVida==0){
+             Greenfoot.stop();
+             
+        }
+        
+        
+        
+        
+        
+        }
     
-     Actor v =null;
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Actor v =null;
      
         if((v=this.getOneIntersectingObject(NuevaVida.class))!=null){
               World mundo = this.getWorld();
@@ -88,6 +121,16 @@ public class Heroe extends Actor
               mundo.addObject(MyWorld.vidas[MyWorld.indiceVida],(30*(MyWorld.indiceVida+1))+5,40);
               MyWorld.indiceVida++;
         }
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
 }
     public Heroe(){
      this.setRotation(90);

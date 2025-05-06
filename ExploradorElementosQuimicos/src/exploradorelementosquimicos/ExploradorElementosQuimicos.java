@@ -8,15 +8,19 @@ package exploradorelementosquimicos;
  *
  * @author ARMANDO BETANCOURT S
  */
-public class ExploradorElementosQuimicos {
-    public static Elemento elementos[] = new Elemento[118];
+public class Exploradorelementosquimicos {
+    public static Elemento elemento[] = new Elemento[118];
+    public static int indice;
+ 
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Principal p = new Principal ();
-       p.setVisible(true);
         // TODO code application logic here
+         principal p= new principal();
+        p.setVisible(true);
+        
     }
     
 }

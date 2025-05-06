@@ -20,11 +20,11 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(800, 700, 1); 
+        super(900, 700, 1); 
         prepare();
-        sonido = new GreenfootSound("Skrillex & Damian Jr. Gong Marley - Make It Bun Dem [OFFICIAL VIDEO].mp3");
+        sonido = new GreenfootSound("La Chona - Los Tucanes De Tijuana [Audio Oficial].mp3");
         //sonido.play();
-        //sonido.setVolume(50);
+        sonido.setVolume(50);
     }
     private int puntosVida=30;
         public void act (){

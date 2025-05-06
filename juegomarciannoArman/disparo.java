@@ -17,6 +17,7 @@ public class disparo extends Actor
         // Add your action code here.
         this.setLocation(this.getX(),this.getY()-10);
         Actor x = null; 
+       
          
         if ((x=this.getOneIntersectingObject(obstaculo.class))!=null){
         MyWorld.puntaje.agregarPuntos(10);
@@ -24,16 +25,40 @@ public class disparo extends Actor
            explosion  e= new explosion();
            mundo.addObject(e,x.getX(), x.getY());
            mundo.removeObject(x);
-           mundo.removeObject(this);
+          
            
         }else
         
         
         if (this.getY()<20){
             World mundo = this.getWorld();
+          
+        }
+
+        
+        
+    
+        if ((x=this.getOneIntersectingObject(Mini.class))!=null){
+        MyWorld.puntaje.agregarPuntos(10);
+           World mundo = this.getWorld();
+           explosion  e= new explosion();
+           mundo.addObject(e,x.getX(), x.getY());
+           mundo.removeObject(x);
+           mundo.removeObject(this);
+        
+
+    }else
+        
+        
+        if (this.getY()<20){
+            World mundo = this.getWorld();
             mundo.removeObject(this);
         }
-    }
+
+
+}
+    
+    
       public disparo(){
      this.setRotation(270);
      GreenfootImage img = this.getImage();
