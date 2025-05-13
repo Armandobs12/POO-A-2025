@@ -22,7 +22,9 @@ public class Ejerpoli {
     public static void main(String[] args) {
      // new Ejercicio1.Formulario().setVisible(true);
         // TODO code application logic here
-       new Ejercicio2.Formulario().setVisible(true);
+        // new Ejercicio1.Formulario().setVisible(true);
+       // new Ejercicio2.Formulario().setVisible(true);
+        new Ejercicio3.Formulario().setVisible(true);
     }
     
 }
