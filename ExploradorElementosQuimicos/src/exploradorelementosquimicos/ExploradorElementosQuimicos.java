@@ -6,7 +6,7 @@ package exploradorelementosquimicos;
 
 /**
  *
- * @author ARMANDO BETANCOURT S
+ * @author ARMANDO BETANCOURT EL MATA SUKURAS PARED AGACHADO.
  */
 public class Exploradorelementosquimicos {
     public static Elemento elemento[] = new Elemento[118];
