@@ -35,7 +35,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jLabel1.setText("Presiona el boton para acceder al arreglo");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Click");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -52,7 +52,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
+                        .addGap(37, 37, 37)
                         .addComponent(jButton1)))
                 .addContainerGap(63, Short.MAX_VALUE))
         );
@@ -61,9 +61,9 @@ public class Ventana extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jLabel1)
-                .addGap(68, 68, 68)
+                .addGap(33, 33, 33)
                 .addComponent(jButton1)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addContainerGap(214, Short.MAX_VALUE))
         );
 
         pack();

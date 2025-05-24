@@ -11,7 +11,11 @@ package com.mycompany.exepcionesa;
 public class ExepcionesA {
 
     public static void main(String[] args) {
-        new Arithmetic.Ventana().setVisible(true);
+       
+
+        
+      
+ new StringIndexOutOfBounds.Ventana().setVisible(true);
        
         
         /*int n = (int)(Math.random()*3);
