@@ -6,7 +6,7 @@ package NullPointer;
 
 /**
  *
- * @author ARMANDO BETANCOURT S
+ * @author ARMANDO BETANCOURT S,Juan Carlos Zavaeta,Luis Angel Mejia, Victor Varona,Critopher Cisneros
  */
 public class pointer {
    public static String Mensaje (){

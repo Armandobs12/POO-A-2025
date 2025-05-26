@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author ARMANDO BETANCOURT S
+ * @author ARMANDO BETANCOURT S,Juan Carlos Zavaeta,Luis Angel Mejia, Victor Varona,Critopher Cisneros
  */
 public class Ventana extends javax.swing.JFrame {
 

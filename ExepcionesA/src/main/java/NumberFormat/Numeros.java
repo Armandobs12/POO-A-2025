@@ -6,7 +6,7 @@ package NumberFormat;
 
 /**
  *
- * @author ARMANDO BETANCOURT S
+ * @author ARMANDO BETANCOURT S,Juan Carlos Zavaeta,Luis Angel Mejia, Victor Varona,Critopher Cisneros
  */
 public class Numeros {
      public static int convertir(String Cadena){

@@ -6,7 +6,7 @@ package Arithmetic;
 
 /**
  *
- * @author ARMANDO BETANCOURT S
+ * @author ARMANDO BETANCOURT S,Juan Carlos Zavaeta,Luis Angel Mejia, Victor Varona,Critopher Cisneros
  */
 public class DivisionSeguro {
      public static float dividir(){

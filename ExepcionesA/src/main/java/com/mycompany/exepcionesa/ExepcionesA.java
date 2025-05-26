@@ -6,7 +6,7 @@ package com.mycompany.exepcionesa;
 
 /**
  *
- * @author ARMANDO BETANCOURT S
+ * @author ARMANDO BETANCOURT S,Juan Carlos Zavaeta,Luis Angel Mejia, Victor Varona,Critopher Cisneros
  */
 public class ExepcionesA {
 
@@ -15,7 +15,7 @@ public class ExepcionesA {
 
         
       
- new StringIndexOutOfBounds.Ventana().setVisible(true);
+ new Arithmetic.Ventana().setVisible(true);
        
         
         /*int n = (int)(Math.random()*3);
