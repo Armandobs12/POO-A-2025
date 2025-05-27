@@ -9,10 +9,10 @@ package exploradorelementosquimicos;
  * @author ARMANDO BETANCOURT S
  */
 public class Elemento {
- private String nombre;
+ private String nombre;//*
  private int numatomico;//numero atomico
- private double pesoAtomico;
- private String simbolo;
+ private double pesoAtomico;//*
+ private String simbolo;//*
  private int[] nivelesElectronicos;
  private int[]estadodeOxidacion;
  private double masaAtomica;
