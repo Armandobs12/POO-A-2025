@@ -24,6 +24,32 @@ public class Elemento {
  private String estado;
  private String notas;
  private int descubrimiento;//año de descubrimiento
+ 
+ public String getDatos(){
+    String datos ="";
+    datos+= nombre+","+numatomico+","+pesoAtomico+","+simbolo+","+nivelesElectronicos+","+estadodeOxidacion+","+
+            masaAtomica+","+disElectronicasOrbitas+","+periodo+","+grupo+","+familia+","+estado+","+notas+","+descubrimiento+"\n";
+     return datos;
+    
+ }  
+ public void seDatos(String [] datos) {
+        this.nombre = datos[0];
+        this.numatomico = Integer.parseInt(datos[1]);
+        this.pesoAtomico = Double.parseDouble(datos[2]);
+        this.simbolo = datos[3];
+        this.nivelesElectronicos = new int[]{ Integer.parseInt(datos[ 4]) };
+         this.estadodeOxidacion = new int[]{ Integer.parseInt(datos[ 5]) };
+          this.masaAtomica = Double.parseDouble(datos[6]);
+           this.disElectronicasOrbitas = Integer.parseInt(datos[7]);
+            this.periodo = Integer.parseInt(datos[8]);
+             this.grupo = Integer.parseInt(datos[9]);
+             this.familia = datos[10];
+             this.estado = datos[11];
+             this.notas = datos[12];
+             this.descubrimiento = Integer.parseInt(datos[13]);
+             
+        
+    }
 
     public String getNombre() {
         return nombre;
@@ -152,5 +178,9 @@ public class Elemento {
                }
                return nee;
      }
+
+    void setDatos(String[] datos) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
  
 }
