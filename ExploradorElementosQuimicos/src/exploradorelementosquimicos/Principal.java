@@ -19,23 +19,52 @@ public class principal extends javax.swing.JFrame {
         cargarTabla();
     }
     public void cargarTabla(){
-    final int filas =9;
-    final int columnas = 18;
-    int x=10,y=10;
-    for(int f =0; f< filas; f++){
-        x=10;
-        for(int c =0; c< columnas; c++) {
-    JElemento e = new JElemento();
-    e.setSize(JElemento.ancho, JElemento.alto);
-    e.setLocation (x, y); 
-    x+=JElemento.ancho;
-    jPanel1.add(e);
-    jPanel1.revalidate();
-          }
-        y+=JElemento.alto;
+        final  int filas=9;//periodos
+        final int columnas=18;//grupos
+        int x=10,y=10;
+        int n = 1;
+        
+        for(int f=0;f<filas;f++){
+            x=10;
+            for(int c=0; c < columnas;c++){
+                JElemento e = new JElemento();
+                e.setSize(JElemento.ancho,JElemento.alto);
+                e.setLocation(x, y);
+                x+=JElemento.ancho;
+                Elemento el = buscarElemento(f+1, c+1);
+                if(el!=null){
+                   e.setDatos(el.getNumatomico(),el.getPesoAtomico(),el.getSimbolo(),el.getNombre());
+                }else
+                    e.setDatos(0, 0, "", "");
+                
+                /*if(n<=118){
+                e.setDatos(n,
+                        Exploradorelementosquimicos.elemento[n-1].getPesoAtomico(),
+                Exploradorelementosquimicos.elemento[n-1].getSimbolo(),
+                Exploradorelementosquimicos.elemento[n-1].getNombre());
+                n++;
+                }else
+                   {
+                      e.setDatos(0,0,"","");
+                   }*/
+                jPanel1.add(e);
+                jPanel1.revalidate();
+            }
+            y+=JElemento.alto;
         }
-    jPanel1.revalidate();
-    jPanel1.repaint();
+       jPanel1.revalidate();
+       jPanel1.repaint();
+    }
+    
+    private Elemento buscarElemento(int periodo,int grupo){
+   Elemento e = null;
+   for(int i =0; i<Exploradorelementosquimicos.indice;i++){
+   if(Exploradorelementosquimicos.elemento[i].getPeriodo()==periodo  &&
+           Exploradorelementosquimicos.elemento[i].getGrupo()==grupo){
+      return Exploradorelementosquimicos.elemento[i];
+   }
+   }
+   return e;
     }
 
     /**
@@ -73,17 +102,17 @@ public class principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jScrollPane1.setViewportView(null);
+        jScrollPane1.setViewportView(jPanel1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 4998, Short.MAX_VALUE)
+            .addGap(0, 2998, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 4998, Short.MAX_VALUE)
+            .addGap(0, 2998, Short.MAX_VALUE)
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -107,7 +136,7 @@ public class principal extends javax.swing.JFrame {
         jMenu1.add(jMenuItem7);
         jMenu1.add(jSeparator1);
 
-        jMenuItem8.setText("Guardad en archivo");
+        jMenuItem8.setText("Guardar archivo");
         jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem8ActionPerformed(evt);
@@ -123,7 +152,7 @@ public class principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -141,14 +170,15 @@ public class principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-ConsultarElementos ce = new ConsultarElementos();
-ce.setVisible(true);
-
+        // TODO add your handling code here:
+        ConsultarElementos ce= new ConsultarElementos();
+        ce.setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
-        Archivo.guardadArchivo();
+        Archivo.guardarArchivo();
+        
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
     /**

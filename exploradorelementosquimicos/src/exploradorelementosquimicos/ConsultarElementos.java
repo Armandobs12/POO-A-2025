@@ -31,8 +31,8 @@ public class ConsultarElementos extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Consulta de Elementos");
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cocnsulta de elementos");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -44,11 +44,11 @@ public class ConsultarElementos extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Nombre", "Numero Atomico", "Peso Atomico", "Simbolo", "Nivel Electronico", "Estado de Oxidacion", "Masa Atomica", "Distribuicion ElectronicasOrbitas", "Periodo", "Grupo", "Familia", "Estado", "notas", "año de descubrimiento"
+                "nombre", "numatomico", "pesoAtomico", "Simbolo", "nivelesElectronicos", "estadodeOxidacion", " masaAtomica", " disElectronicasOrbitas", "periodo", "grupo", "familia", "estado", "notas", "descubrimiento"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Integer.class, java.lang.Double.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.Integer.class, java.lang.Double.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Double.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class
             };
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false, false, false, false, false, false, false, false, false
@@ -68,46 +68,53 @@ public class ConsultarElementos extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 614, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-private String desglosar(int[] origen){
-String c = "";
-for (int i : origen){
-c+=i+" ";
-}
-return c;
-}
-    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-      DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
-     for(int i =0; i<Exploradorelementosquimicos.indice;i++){
-     modelo.addRow(new Object[]{
-     Exploradorelementosquimicos.elemento[i].getNombre(),
-         Exploradorelementosquimicos.elemento[i].getNumatomico(),
-         Exploradorelementosquimicos.elemento[i].getPesoAtomico(),
-         Exploradorelementosquimicos.elemento[i].getSimbolo(),
-         desglosar(Exploradorelementosquimicos.elemento[i].getNivelesElectronicos()),
-          desglosar(Exploradorelementosquimicos.elemento[i].getEstadodeOxidacion()),
-         Exploradorelementosquimicos.elemento[i].getMasaAtomica(),
-         Exploradorelementosquimicos.elemento[i].getDisElectronicasOrbitas(),
-         Exploradorelementosquimicos.elemento[i].getPeriodo(),
-         Exploradorelementosquimicos.elemento[i].getGrupo(),
-         Exploradorelementosquimicos.elemento[i].getFamilia(),
-         Exploradorelementosquimicos.elemento[i].getEstado(),
-         Exploradorelementosquimicos.elemento[i].getNotas(),
-         Exploradorelementosquimicos.elemento[i].getDescubrimiento()
 
-       });
-     }
-              
-              
+        private String desglozar(int[] origen){
+            String c="";
+            for(int i:origen){
+                c+=i+"";
+                
+            }
+            return c;
+        }
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
+          DefaultTableModel modelo=(DefaultTableModel) jTable1.getModel();
+        for(int i=0; i<Exploradorelementosquimicos.indice;i++){
+            modelo.addRow(new Object[]{
+            Exploradorelementosquimicos.elemento[i].getNombre(),
+                Exploradorelementosquimicos.elemento[i].getNumatomico(),
+                Exploradorelementosquimicos.elemento[i].getPesoAtomico(),
+                Exploradorelementosquimicos.elemento[i].getSimbolo(),
+                desglozar (Exploradorelementosquimicos.elemento[i].getNivelesElectronicos()),
+                desglozar (Exploradorelementosquimicos.elemento[i].getEstadodeOxidacion()),
+                Exploradorelementosquimicos.elemento[i].getMasaAtomica(),
+                Exploradorelementosquimicos.elemento[i].getDisElectronicasOrbitas(),
+                Exploradorelementosquimicos.elemento[i].getPeriodo(),
+                Exploradorelementosquimicos.elemento[i].getGrupo(),
+                Exploradorelementosquimicos.elemento[i].getFamilia(),
+                Exploradorelementosquimicos.elemento[i].getEstado(),
+                Exploradorelementosquimicos.elemento[i].getNotas(),
+                Exploradorelementosquimicos.elemento[i].getDescubrimiento()
+    });
+        }
+
+        
     }//GEN-LAST:event_formWindowOpened
 
     /**

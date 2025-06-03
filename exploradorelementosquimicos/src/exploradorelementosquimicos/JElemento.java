@@ -9,11 +9,21 @@ package exploradorelementosquimicos;
  * @author ARMANDO BETANCOURT S
  */
 public class JElemento extends javax.swing.JPanel {
-public static final int ancho = 55;
-public static final int alto = 60;
+public static final int ancho=75;
+public static final int alto=63;
     /**
      * Creates new form JElemento
      */
+
+   public void setDatos(int natomico, double peso, String simbolo, String nombre){
+   jLabel1.setText(""+natomico);
+    jLabel2.setText(""+peso);
+        jLabel3.setText(""+simbolo);
+jLabel4.setText(""+nombre);
+   
+   }
+
+
     public JElemento() {
         initComponents();
     }
@@ -32,24 +42,21 @@ public static final int alto = 60;
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 204), 1, true));
+        setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 0, 0), new java.awt.Color(51, 0, 51), new java.awt.Color(0, 0, 153), new java.awt.Color(0, 0, 51)));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel1.setText("1");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel2.setText("1.0078");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel3.setText("H");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        jLabel4.setText("Hidrogeno");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
+        jLabel4.setText("Hidrógeno");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 

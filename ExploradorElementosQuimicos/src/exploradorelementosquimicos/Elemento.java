@@ -9,14 +9,14 @@ package exploradorelementosquimicos;
  * @author ARMANDO BETANCOURT S
  */
 public class Elemento {
- private String nombre;//*
+ private String nombre;
  private int numatomico;//numero atomico
- private double pesoAtomico;//*
- private String simbolo;//*
+ private double pesoAtomico;
+ private String simbolo;
  private int[] nivelesElectronicos;
  private int[]estadodeOxidacion;
  private double masaAtomica;
- private int disElectronicasOrbitas;
+ private String disElectronicasOrbitas;
  private int periodo;
  //private int serie; corresponde  grupo.
  private int grupo;
@@ -25,29 +25,59 @@ public class Elemento {
  private String notas;
  private int descubrimiento;//año de descubrimiento
  
+ 
  public String getDatos(){
-    String datos ="";
-    datos+= nombre+","+numatomico+","+pesoAtomico+","+simbolo+","+nivelesElectronicos+","+estadodeOxidacion+","+
-            masaAtomica+","+disElectronicasOrbitas+","+periodo+","+grupo+","+familia+","+estado+","+notas+","+descubrimiento+"\n";
-     return datos;
-    
- }  
- public void seDatos(String [] datos) {
+     String datos="";
+     datos+= nombre+","+numatomico+","+pesoAtomico+","+simbolo+","+nivelesElectronicos+","+estadodeOxidacion+","+masaAtomica+","+disElectronicasOrbitas+","+periodo+","+grupo+","+familia+","+estado+","+notas+","+descubrimiento+"\n";
+     
+   return datos;
+       
+ }
+ 
+ public void setDatos(String [] datos){
         this.nombre = datos[0];
-        this.numatomico = Integer.parseInt(datos[1]);
+        this.numatomico =  Integer.parseInt(datos[1]);
         this.pesoAtomico = Double.parseDouble(datos[2]);
         this.simbolo = datos[3];
-        this.nivelesElectronicos = new int[]{ Integer.parseInt(datos[ 4]) };
-         this.estadodeOxidacion = new int[]{ Integer.parseInt(datos[ 5]) };
-          this.masaAtomica = Double.parseDouble(datos[6]);
-           this.disElectronicasOrbitas = Integer.parseInt(datos[7]);
-            this.periodo = Integer.parseInt(datos[8]);
-             this.grupo = Integer.parseInt(datos[9]);
-             this.familia = datos[10];
-             this.estado = datos[11];
-             this.notas = datos[12];
-             this.descubrimiento = Integer.parseInt(datos[13]);
-             
+        this.nivelesElectronicos=unir(datos[4]);
+        this.estadodeOxidacion =unir(datos[5]);
+        this.masaAtomica = Double.parseDouble(datos[6]);
+        this.disElectronicasOrbitas = (datos[7]);
+        this.periodo = Integer.parseInt(datos[8]);
+        this.grupo =datos[9].compareToIgnoreCase("nan")==0 ? 0 : Integer.parseInt(datos[9]);
+        this.familia = datos[10];
+        this.estado = datos[11];
+        this.notas  = datos[12];
+        try{
+        this.descubrimiento = Integer.parseInt(datos[13]);
+        }catch(NumberFormatException ex){
+            this.descubrimiento=0;
+        }
+    }
+    
+    private String separar(int[] d){
+        String dat = "";
+        
+        for (int i = 0; i < d.length; i++) {
+            dat+=d[i];
+            if(i+1<d.length) dat+="-";
+        }
+        
+        return dat;
+    }
+    
+    private int[] unir(String cad){
+        
+        String[] a =  cad.split("-");
+        int[] a2 = new int[a.length];
+        for (int i = 0; i < a.length; i++) {
+         try{
+            a2[i] = ( a[i].length()>0 ?   Integer.parseInt(a[i]) : 0);
+            }catch(NumberFormatException e){
+                a2[i] =0; 
+            }
+        }
+        return a2;
         
     }
 
@@ -107,11 +137,11 @@ public class Elemento {
         this.masaAtomica = masaAtomica;
     }
 
-    public int getDisElectronicasOrbitas() {
+    public String   getDisElectronicasOrbitas() {
         return disElectronicasOrbitas;
     }
 
-    public void setDisElectronicasOrbitas(int disElectronicasOrbitas) {
+    public void setDisElectronicasOrbitas(String  disElectronicasOrbitas) {
         this.disElectronicasOrbitas = disElectronicasOrbitas;
     }
 
@@ -178,9 +208,5 @@ public class Elemento {
                }
                return nee;
      }
-
-    void setDatos(String[] datos) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
  
 }

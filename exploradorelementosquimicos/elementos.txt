@@ -1,0 +1,118 @@
+Hidrógeno,1,1.008,H,1,1--1,1.008,1,1,1,No metal,Gas,El hidrógeno es el elemento químico más ligero y abundante en el universo.,1766
+Helio,2,4.0026,He,2,0,4.0026,2,1,18,Gases Nobles,Gas,El helio es el segundo elemento más ligero y es inerte.,1895
+Litio,3,6.94,Li,2-1,1,6.94,2-1,2,1,Metales Alcalinos,Sólido,El litio es un metal alcalino blando y plateado-blanco.,1817
+Berilio,4,9.0122,Be,2-2,2,9.0122,2-2,2,2,Metales Alcalinotérreos,Sólido,El berilio es un metal alcalinotérreo ligero y resistente.,1798
+Boro,5,10.81,B,2-3,3,10.81,2-3,2,13,Familia del Boro,Sólido,El boro es un metaloide con propiedades intermedias entre metales y no metales.,1808
+Carbono,6,12.011,C,2-4,4--4-2,12.011,2-4,2,14,Familia del Carbono,Sólido,El carbono es la base de toda la vida orgánica.,-
+Nitrógeno,7,14.007,N,2-5,5-4-3-2-1-0-1-2-3-4-5,14.007,2-5,2,15,Familia del Nitrógeno,Gas,El nitrógeno es el gas más abundante en la atmósfera terrestre.,1772
+Oxígeno,8,15.999,O,2-6,2-1,15.999,2-6,2,16,Calcógenos o Anfígenos,Gas,El oxígeno es esencial para la respiración de la mayoría de los seres vivos.,1774
+Flúor,9,18.998,F,2-7,1,18.998,2-7,2,17,Halógenos,Gas,El flúor es el elemento más electronegativo.,1886
+Neón,10,20.18,Ne,2-8,0,20.18,2-8,2,18,Gases Nobles,Gas,El neón es un gas noble inerte utilizado en letreros luminosos.,1898
+Sodio,11,22.99,Na,2-8-1,1,22.99,2-8-1,3,1,Metales Alcalinos,Sólido,El sodio es un metal alcalino blando y muy reactivo.,1807
+Magnesio,12,24.305,Mg,2-8-2,2,24.305,2-8-2,3,2,Metales Alcalinotérreos,Sólido,El magnesio es un metal alcalinotérreo ligero y fuerte.,1755
+Aluminio,13,26.982,Al,2-8-3,3,26.982,2-8-3,3,13,Familia del Boro,Sólido,El aluminio es un metal ligero y resistente a la corrosión.,1825
+Silicio,14,28.085,Si,2-8-4,4-2-1,28.085,2-8-4,3,14,Familia del Carbono,Sólido,El silicio es un metaloide utilizado en la electrónica.,1823
+Fósforo,15,30.974,P,2-8-5,5-3-0,30.974,2-8-5,3,15,Familia del Nitrógeno,Sólido,El fósforo es un no metal reactivo y tóxico.,1669
+Azufre,16,32.06,S,2-8-6,6-4-2,32.06,2-8-6,3,16,Calcógenos o Anfígenos,Sólido,El azufre es un no metal amarillo que se encuentra en la naturaleza.,-
+Cloro,17,35.45,Cl,2-8-7,7-5-3-1-1,35.45,2-8-7,3,17,Halógenos,Gas,El cloro es un halógeno muy reactivo y tóxico.,1774
+Argón,18,39.948,Ar,2-8-8,0,39.948,2-8-8,3,18,Gases Nobles,Gas,El argón es un gas noble inerte utilizado en iluminación y soldadura.,1894
+Potasio,19,39.098,K,2-8-8-1,1,39.098,2-8-8-1,4,1,Metales Alcalinos,Sólido,El potasio es un metal alcalino blando y muy reactivo.,1807
+Calcio,20,40.078,Ca,2-8-8-2,2,40.078,2-8-8-2,4,2,Metales Alcalinotérreos,Sólido,El calcio es un metal alcalinotérreo esencial para huesos y dientes.,1808
+Escandio,21,44.956,Sc,2-8-9-2,3,44.956,2-8-9-2,4,3,Metales de Transición,Sólido,El escandio es un metal de transición ligero y blando.,1879
+Titanio,22,47.867,Ti,2-8-10-2,4-3-2,47.867,2-8-10-2,4,4,Metales de Transición,Sólido,El titanio es un metal fuerte, ligero y resistente a la corrosión.,1791
+Vanadio,23,50.942,V,2-8-11-2,5-4-3-2,50.942,2-8-11-2,4,5,Metales de Transición,Sólido,El vanadio es un metal de transición duro y plateado.,1830
+Cromo,24,51.996,Cr,2-8-13-1,6-3-2,51.996,2-8-13-1,4,6,Metales de Transición,Sólido,El cromo es un metal duro y brillante utilizado en aleaciones.,1797
+Manganeso,25,54.938,Mn,2-8-13-2,7-6-4-3-2,54.938,2-8-13-2,4,7,Metales de Transición,Sólido,El manganeso es un metal de transición importante en la producción de acero.,1774
+Hierro,26,55.845,Fe,2-8-14-2,3-2,55.845,2-8-14-2,4,8,Metales de Transición,Sólido,El hierro es un metal común y esencial para la vida.,-
+Cobalto,27,58.933,Co,2-8-15-2,3-2,58.933,2-8-15-2,4,9,Metales de Transición,Sólido,El cobalto es un metal de transición magnético.,1735
+Níquel,28,58.693,Ni,2-8-16-2,2,58.693,2-8-16-2,4,10,Metales de Transición,Sólido,El níquel es un metal de transición plateado-blanco y resistente a la corrosión.,1751
+Cobre,29,63.546,Cu,2-8-18-1,2-1,63.546,2-8-18-1,4,11,Metales de Transición,Sólido,El cobre es un metal maleable y dúctil, excelente conductor eléctrico.,-
+Zinc,30,65.38,Zn,2-8-18-2,2,65.38,2-8-18-2,4,12,Metales de Transición,Sólido,El zinc es un metal quebradizo a temperatura ambiente.,1746
+Galio,31,69.723,Ga,2-8-18-3,3,69.723,2-8-18-3,4,13,Familia del Boro,Sólido,El galio es un metal blando con un bajo punto de fusión.,1875
+Germanio,32,72.63,Ge,2-8-18-4,4-2,72.63,2-8-18-4,4,14,Familia del Carbono,Sólido,El germanio es un metaloide con propiedades semiconductoras.,1886
+Arsénico,33,74.922,As,2-8-18-5,5-3,74.922,2-8-18-5,4,15,Familia del Nitrógeno,Sólido,El arsénico es un metaloide tóxico.,-
+Selenio,34,78.971,Se,2-8-18-6,6-4-2,78.971,2-8-18-6,4,16,Calcógenos o Anfígenos,Sólido,El selenio es un no metal con propiedades fotoconductoras.,1817
+Bromo,35,79.904,Br,2-8-18-7,5-3-1,79.904,2-8-18-7,4,17,Halógenos,Líquido,El bromo es el único halógeno líquido a temperatura ambiente.,1826
+Kriptón,36,83.798,Kr,2-8-18-8,0,83.798,2-8-18-8,4,18,Gases Nobles,Gas,El kriptón es un gas noble inerte utilizado en lámparas de descarga.,1898
+Rubidio,37,85.468,Rb,2-8-18-8-1,1,85.468,2-8-18-8-1,5,1,Metales Alcalinos,Sólido,El rubidio es un metal alcalino muy reactivo.,1861
+Estroncio,38,87.62,Sr,2-8-18-8-2,2,87.62,2-8-18-8-2,5,2,Metales Alcalinotérreos,Sólido,El estroncio es un metal alcalinotérreo que produce llamas rojas.,1790
+Itrio,39,88.906,Y,2-8-18-9-2,3,88.906,2-8-18-9-2,5,3,Metales de Transición,Sólido,El itrio es un metal de transición utilizado en aleaciones.,1794
+Circonio,40,91.224,Zr,2-8-18-10-2,4,91.224,2-8-18-10-2,5,4,Metales de Transición,Sólido,El circonio es un metal resistente a la corrosión, utilizado en reactores nucleares.,1789
+Niobio,41,92.906,Nb,2-8-18-12-1,5-3,92.906,2-8-18-12-1,5,5,Metales de Transición,Sólido,El niobio es un metal de transición utilizado en aleaciones superconductoras.,1801
+Molibdeno,42,95.95,Mo,2-8-18-13-1,6-5-4-3-2,95.95,2-8-18-13-1,5,6,Metales de Transición,Sólido,El molibdeno es un metal refractario utilizado en aleaciones de acero.,1778
+Tecnecio,43,98,Tc,2-8-18-13-2,7-6-5-4-3-2-1,98,2-8-18-13-2,5,7,Metales de Transición,Sólido,El tecnecio es el elemento más ligero sin isótopos estables.,1937
+Rutenio,44,101.07,Ru,2-8-18-15-1,8-6-4-3-2,101.07,2-8-18-15-1,5,8,Metales de Transición,Sólido,El rutenio es un metal de transición del grupo del platino.,1844
+Rodio,45,102.91,Rh,2-8-18-16-1,3-2,102.91,2-8-18-16-1,5,9,Metales de Transición,Sólido,El rodio es un metal de transición plateado-blanco y muy reflectante.,1803
+Paladio,46,106.42,Pd,2-8-18-18-0,4-2,106.42,2-8-18-18-0,5,10,Metales de Transición,Sólido,El paladio es un metal de transición del grupo del platino.,1803
+Plata,47,107.87,Ag,2-8-18-18-1,1,107.87,2-8-18-18-1,5,11,Metales de Transición,Sólido,La plata es un metal precioso y excelente conductor eléctrico.,-
+Cadmio,48,112.41,Cd,2-8-18-18-2,2,112.41,2-8-18-18-2,5,12,Metales de Transición,Sólido,El cadmio es un metal tóxico utilizado en baterías.,1817
+Indio,49,114.82,In,2-8-18-18-3,3-2-1,114.82,2-8-18-18-3,5,13,Familia del Boro,Sólido,El indio es un metal blando con un bajo punto de fusión.,1863
+Estaño,50,118.71,Sn,2-8-18-18-4,4-2,118.71,2-8-18-18-4,5,14,Familia del Carbono,Sólido,El estaño es un metal dúctil y maleable, utilizado en aleaciones.,-
+Antimonio,51,121.76,Sb,2-8-18-18-5,5-3,121.76,2-8-18-18-5,5,15,Familia del Nitrógeno,Sólido,El antimonio es un metaloide con propiedades tóxicas.,-
+Telurio,52,127.6,Te,2-8-18-18-6,6-4-2,127.6,2-8-18-18-6,5,16,Calcógenos o Anfígenos,Sólido,El telurio es un metaloide quebradizo y plateado-blanco.,1782
+Yodo,53,126.9,I,2-8-18-18-7,7-5-3-1,126.9,2-8-18-18-7,5,17,Halógenos,Sólido,El yodo es un halógeno que se sublima fácilmente.,1811
+Xenón,54,131.29,Xe,2-8-18-18-8,0,131.29,2-8-18-18-8,5,18,Gases Nobles,Gas,El xenón es un gas noble inerte utilizado en lámparas y flashes.,1898
+Cesio,55,132.91,Cs,2-8-18-18-8-1,1,132.91,2-8-18-18-8-1,6,1,Metales Alcalinos,Sólido,El cesio es el metal alcalino más reactivo y el más pesado de los metales alcalinos no radiactivos.,1860
+Bario,56,137.33,Ba,2-8-18-18-8-2,2,137.33,2-8-18-18-8-2,6,2,Metales Alcalinotérreos,Sólido,El bario es un metal alcalinotérreo blando y plateado.,1808
+Lantano,57,138.91,La,2-8-18-18-9-2,3,138.91,2-8-18-18-9-2,6,3,Metales de Transición,Sólido,El lantano es el primer elemento de la serie de los lantánidos.,1839
+Cerio,58,140.12,Ce,2-8-18-19-9-2,4-3,140.12,2-8-18-19-9-2,6,nan,Metales de Transición,Sólido,El cerio es el lantánido más abundante.,1803
+Praseodimio,59,140.91,Pr,2-8-18-21-8-2,3,140.91,2-8-18-21-8-2,6,nan,Metales de Transición,Sólido,El praseodimio es un lantánido utilizado en imanes permanentes.,1885
+Neodimio,60,144.24,Nd,2-8-18-22-8-2,3,144.24,2-8-18-22-8-2,6,nan,Metales de Transición,Sólido,El neodimio es un lantánido utilizado en imanes muy potentes.,1885
+Prometio,61,145,Pm,2-8-18-23-8-2,3,145,2-8-18-23-8-2,6,nan,Metales de Transición,Sólido,El prometio es el único lantánido radiactivo y el segundo elemento con isótopos inestables.,1945
+Samario,62,150.36,Sm,2-8-18-24-8-2,3-2,150.36,2-8-18-24-8-2,6,nan,Metales de Transición,Sólido,El samario es un lantánido utilizado en imanes y control de reactores nucleares.,1879
+Europio,63,151.96,Eu,2-8-18-25-8-2,3-2,151.96,2-8-18-25-8-2,6,nan,Metales de Transición,Sólido,El europio es un lantánido utilizado en fósforos para pantallas de televisión.,1901
+Gadolinio,64,157.25,Gd,2-8-18-25-9-2,3,157.25,2-8-18-25-9-2,6,nan,Metales de Transición,Sólido,El gadolinio es un lantánido utilizado en imágenes de resonancia magnética.,1886
+Terbio,65,158.93,Tb,2-8-18-27-8-2,3,158.93,2-8-18-27-8-2,6,nan,Metales de Transición,Sólido,El terbio es un lantánido utilizado en aleaciones y láseres.,1843
+Disprosio,66,162.5,Dy,2-8-18-28-8-2,3,162.5,2-8-18-28-8-2,6,nan,Metales de Transición,Sólido,El disprosio es un lantánido utilizado en láseres y almacenamiento de datos.,1886
+Holmio,67,164.93,Ho,2-8-18-29-8-2,3,164.93,2-8-18-29-8-2,6,nan,Metales de Transición,Sólido,El holmio es un lantánido utilizado en imanes y láseres.,1878
+Erbio,68,167.26,Er,2-8-18-30-8-2,3,167.26,2-8-18-30-8-2,6,nan,Metales de Transición,Sólido,El erbio es un lantánido utilizado en amplificadores de fibra óptica.,1843
+Tulio,69,168.93,Tm,2-8-18-31-8-2,3,168.93,2-8-18-31-8-2,6,nan,Metales de Transición,Sólido,El tulio es un lantánido utilizado en láseres y fuentes de rayos X.,1879
+Iterbio,70,173.05,Yb,2-8-18-32-8-2,3-2,173.05,2-8-18-32-8-2,6,nan,Metales de Transición,Sólido,El iterbio es un lantánido utilizado en láseres de fibra.,1907
+Lutecio,71,174.97,Lu,2-8-18-32-9-2,3,174.97,2-8-18-32-9-2,6,3,Metales de Transición,Sólido,El lutecio es el último elemento de la serie de los lantánidos.,1907
+Hafnio,72,178.49,Hf,2-8-18-32-10-2,4,178.49,2-8-18-32-10-2,6,4,Metales de Transición,Sólido,El hafnio es un metal de transición utilizado en aleaciones y control de reactores nucleares.,1923
+Tantalio,73,180.95,Ta,2-8-18-32-11-2,5,180.95,2-8-18-32-11-2,6,5,Metales de Transición,Sólido,El tantalio es un metal de transición resistente a la corrosión, utilizado en condensadores.,1802
+Wolframio,74,183.84,W,2-8-18-32-12-2,6-5-4-3-2,183.84,2-8-18-32-12-2,6,6,Metales de Transición,Sólido,El wolframio (tungsteno) es un metal con el punto de fusión más alto de todos los elementos.,1783
+Renio,75,186.21,Re,2-8-18-32-13-2,7-6-5-4-3-2-1,186.21,2-8-18-32-13-2,6,7,Metales de Transición,Sólido,El renio es un metal de transición muy denso, utilizado en superaleaciones.,1925
+Osmio,76,190.23,Os,2-8-18-32-14-2,8-6-4-3-2,190.23,2-8-18-32-14-2,6,8,Metales de Transición,Sólido,El osmio es el elemento más denso conocido.,1803
+Iridio,77,192.22,Ir,2-8-18-32-15-2,4-3,192.22,2-8-18-32-15-2,6,9,Metales de Transición,Sólido,El iridio es un metal de transición muy resistente a la corrosión.,1803
+Platino,78,195.08,Pt,2-8-18-32-17-1,4-2,195.08,2-8-18-32-17-1,6,10,Metales de Transición,Sólido,El platino es un metal precioso y catalizador.,1735
+Oro,79,196.97,Au,2-8-18-32-18-1,3-1,196.97,2-8-18-32-18-1,6,11,Metales de Transición,Sólido,El oro es un metal precioso, maleable y dúctil.,-
+Mercurio,80,200.59,Hg,2-8-18-32-18-2,2-1,200.59,2-8-18-32-18-2,6,12,Metales de Transición,Líquido,El mercurio es el único metal líquido a temperatura ambiente.,-
+Talio,81,204.38,Tl,2-8-18-32-18-3,3-1,204.38,2-8-18-32-18-3,6,13,Familia del Boro,Sólido,El talio es un metal blando y tóxico.,1861
+Plomo,82,207.2,Pb,2-8-18-32-18-4,4-2,207.2,2-8-18-32-18-4,6,14,Familia del Carbono,Sólido,El plomo es un metal pesado y tóxico.,-
+Bismuto,83,208.98,Bi,2-8-18-32-18-5,5-3,208.98,2-8-18-32-18-5,6,15,Familia del Nitrógeno,Sólido,El bismuto es un metal quebradizo y plateado-rosado.,1753
+Polonio,84,209,Po,2-8-18-32-18-6,6-4-2,209,2-8-18-32-18-6,6,16,Calcógenos o Anfígenos,Sólido,El polonio es un elemento radiactivo.,1898
+Astato,85,210,At,2-8-18-32-18-7,7-5-3-1,210,2-8-18-32-18-7,6,17,Halógenos,Sólido,El astato es el halógeno más pesado y radiactivo.,1940
+Radón,86,222,Rn,2-8-18-32-18-8,0,222,2-8-18-32-18-8,6,18,Gases Nobles,Gas,El radón es un gas noble radiactivo.,1900
+Francio,87,223,Fr,2-8-18-32-18-8-1,1,223,2-8-18-32-18-8-1,7,1,Metales Alcalinos,Sólido,El francio es el segundo elemento más raro en la Tierra y el metal alcalino más inestable.,1939
+Radio,88,226,Ra,2-8-18-32-18-8-2,2,226,2-8-18-32-18-8-2,7,2,Metales Alcalinotérreos,Sólido,El radio es un metal alcalinotérreo radiactivo.,1898
+Actinio,89,227,Ac,2-8-18-32-18-9-2,3,227,2-8-18-32-18-9-2,7,3,Metales de Transición,Sólido,El actinio es el primer elemento de la serie de los actínidos.,1899
+Torio,90,232.04,Th,2-8-18-32-18-10-2,4,232.04,2-8-18-32-18-10-2,7,nan,Metales de Transición,Sólido,El torio es un actínido radiactivo utilizado como combustible nuclear.,1828
+Protactinio,91,231.04,Pa,2-8-18-32-20-9-2,5-4,231.04,2-8-18-32-20-9-2,7,nan,Metales de Transición,Sólido,El protactinio es un actínido radiactivo muy tóxico.,1913
+Uranio,92,238.03,U,2-8-18-32-21-9-2,6-5-4-3,238.03,2-8-18-32-21-9-2,7,nan,Metales de Transición,Sólido,El uranio es un actínido radiactivo utilizado en combustible nuclear y armas nucleares.,1789
+Neptunio,93,237,Np,2-8-18-32-22-9-2,5-4-3,237,2-8-18-32-22-9-2,7,nan,Metales de Transición,Sólido,El neptunio es el primer elemento transuránico.,1940
+Plutonio,94,244,Pu,2-8-18-32-24-8-2,4-3,244,2-8-18-32-24-8-2,7,nan,Metales de Transición,Sólido,El plutonio es un actínido radiactivo utilizado en armas nucleares y reactores.,1940
+Americio,95,243,Am,2-8-18-32-25-8-2,3,243,2-8-18-32-25-8-2,7,nan,Metales de Transición,Sólido,El americio es un actínido sintético utilizado en detectores de humo.,1944
+Curio,96,247,Cm,2-8-18-32-25-9-2,3,247,2-8-18-32-25-9-2,7,nan,Metales de Transición,Sólido,El curio es un actínido sintético y altamente radiactivo.,1944
+Berkelio,97,247,Bk,2-8-18-32-27-8-2,4-3,247,2-8-18-32-27-8-2,7,nan,Metales de Transición,Sólido,El berkelio es un actínido sintético.,1949
+Californio,98,251,Cf,2-8-18-32-28-8-2,3,251,2-8-18-32-28-8-2,7,nan,Metales de Transición,Sólido,El californio es un actínido sintético utilizado en fuentes de neutrones.,1950
+Einsteinio,99,252,Es,2-8-18-32-29-8-2,3-2,252,2-8-18-32-29-8-2,7,nan,Metales de Transición,Sólido,El einstenio es un actínido sintético.,1952
+Fermio,100,257,Fm,2-8-18-32-30-8-2,2,257,2-8-18-32-30-8-2,7,nan,Metales de Transición,Sólido,El fermio es un actínido sintético.,1952
+Mendelevio,101,258,Md,2-8-18-32-31-8-2,3-2,258,2-8-18-32-31-8-2,7,nan,Metales de Transición,Sólido,El mendelevio es un actínido sintético.,1955
+Nobelio,102,259,No,2-8-18-32-32-8-2,2-3,259,2-8-18-32-32-8-2,7,nan,Metales de Transición,Sólido,El nobelio es un actínido sintético.,1966
+Lawrencio,103,266,Lr,2-8-18-32-32-8-3,3,266,2-8-18-32-32-8-3,7,nan,Metales de Transición,Sólido,El lawrencio es el último elemento de la serie de los actínidos.,1961
+Rutherfordio,104,267,Rf,2-8-18-32-32-10-2,4,267,2-8-18-32-32-10-2,7,4,Metales de Transición,Sólido,El rutherfordio es un elemento sintético y radiactivo.,1964
+Dubnio,105,268,Db,2-8-18-32-32-11-2,5,268,2-8-18-32-32-11-2,7,5,Metales de Transición,Sólido,El dubnio es un elemento sintético y radiactivo.,1968
+Seaborgio,106,269,Sg,2-8-18-32-32-12-2,6,269,2-8-18-32-32-12-2,7,6,Metales de Transición,Sólido,El seaborgio es un elemento sintético y radiactivo.,1974
+Bohrio,107,270,Bh,2-8-18-32-32-13-2,7,270,2-8-18-32-32-13-2,7,7,Metales de Transición,Sólido,El bohrio es un elemento sintético y radiactivo.,1976
+Hasio,108,277,Hs,2-8-18-32-32-14-2,8,277,2-8-18-32-32-14-2,7,8,Metales de Transición,Sólido,El hasio es un elemento sintético y radiactivo.,1984
+Meitnerio,109,278,Mt,2-8-18-32-32-15-2,9-7-5-3,278,2-8-18-32-32-15-2,7,9,Metales de Transición,Sólido,El meitnerio es un elemento sintético y radiactivo.,1982
+Darmstadtio,110,281,Ds,2-8-18-32-32-16-2,8-6-4-2,281,2-8-18-32-32-16-2,7,10,Metales de Transición,Sólido,El darmstadtio es un elemento sintético y radiactivo.,1994
+Roentgenio,111,282,Rg,2-8-18-32-32-17-2,7-5-3-1,282,2-8-18-32-32-17-2,7,11,Metales de Transición,Sólido,El roentgenio es un elemento sintético y radiactivo.,1994
+Copernicio,112,285,Cn,2-8-18-32-32-18-2,2-4,285,2-8-18-32-32-18-2,7,12,Metales de Transición,Sólido,El copernicio es un elemento sintético y radiactivo.,1996
+Nihonio,113,286,Nh,2-8-18-32-32-18-3,1,286,2-8-18-32-32-18-3,7,13,Familia del Boro,Sólido,El nihonio es un elemento sintético y radiactivo.,2003
+Flerovio,114,289,Fl,2-8-18-32-32-18-4,4-2,289,2-8-18-32-32-18-4,7,14,Familia del Carbono,Sólido,El flerovio es un elemento sintético y radiactivo.,1999
+Moscovio,115,290,Mc,2-8-18-32-32-18-5,3-1,290,2-8-18-32-32-18-5,7,15,Familia del Nitrógeno,Sólido,El moscovio es un elemento sintético y radiactivo.,2003
+Livermorio,116,293,Lv,2-8-18-32-32-18-6,2-4,293,2-8-18-32-32-18-6,7,16,Calcógenos o Anfígenos,Sólido,El livermorio es un elemento sintético y radiactivo.,2000
+Teneso,117,294,Ts,2-8-18-32-32-18-7,1-3-5,294,2-8-18-32-32-18-7,7,17,Halógenos,Sólido,El teneso es un elemento sintético y radiactivo.,2010
+Oganesón,118,294,Og,2-8-18-32-32-18-8,0,294,2-8-18-32-32-18-8,7,18,Gases Nobles,Gas,El oganesón es un elemento sintético y radiactivo.,2006
