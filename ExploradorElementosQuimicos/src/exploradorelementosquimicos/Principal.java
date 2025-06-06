@@ -23,7 +23,9 @@ public class principal extends javax.swing.JFrame {
         final int columnas=18;//grupos
         int x=10,y=10;
         int n = 1;
-        
+        int na=57;
+         int na2= 89;
+                
         for(int f=0;f<filas;f++){
             x=10;
             for(int c=0; c < columnas;c++){
@@ -33,9 +35,29 @@ public class principal extends javax.swing.JFrame {
                 x+=JElemento.ancho;
                 Elemento el = buscarElemento(f+1, c+1);
                 if(el!=null){
-                   e.setDatos(el.getNumatomico(),el.getPesoAtomico(),el.getSimbolo(),el.getNombre());
-                }else
+                   e.setDatos(el.getNumatomico(),el.getPesoAtomico(),el.getSimbolo(),
+                           el.getNombre());
+                }else{
+                    if(f+1==8 && c+1>=4){
+                    e.setDatos(na-1,
+                        Exploradorelementosquimicos.elemento[na-1].getPesoAtomico(),
+                Exploradorelementosquimicos.elemento[na-1].getSimbolo(),
+                Exploradorelementosquimicos.elemento[na-1].getNombre());
+                     //  e.setColorfamilia(Exploradorelementosquimicos.elemento[na-1].getFamilia());
+                    e.elemento=Exploradorelementosquimicos.elemento[na-1];
+                    na++;
+                    }else
+                      if(f+1==9 && c+1>=4){
+                    e.setDatos(na2-1,
+                        Exploradorelementosquimicos.elemento[na2-1].getPesoAtomico(),
+                Exploradorelementosquimicos.elemento[na2-1].getSimbolo(),
+                Exploradorelementosquimicos.elemento[na2-1].getNombre());
+                   //  e.setColorFamilia(Exploradorelementosquimicos.elemento[na2-1].getFamilia());
+                    e.elemento= Exploradorelementosquimicos.elemento[na2-1];
+                    na2++;
+               }else
                     e.setDatos(0, 0, "", "");
+}
                 
                 /*if(n<=118){
                 e.setDatos(n,

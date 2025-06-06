@@ -43,6 +43,11 @@ jLabel4.setText(""+nombre);
         jLabel4 = new javax.swing.JLabel();
 
         setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 0, 0), new java.awt.Color(51, 0, 51), new java.awt.Color(0, 0, 153), new java.awt.Color(0, 0, 51)));
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                formMouseClicked(evt);
+            }
+        });
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("1");
@@ -58,6 +63,15 @@ jLabel4.setText(""+nombre);
         jLabel4.setText("Hidrógeno");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
+public Elemento elemento;
+    
+    private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
+if(elemento!= null ){
+        detalleElemento e= new detalleElemento(elemento);
+e.setVisible(true);
+}
+// TODO add your handling code here:
+    }//GEN-LAST:event_formMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

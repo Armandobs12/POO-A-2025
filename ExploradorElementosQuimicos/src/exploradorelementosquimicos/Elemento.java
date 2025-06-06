@@ -55,7 +55,7 @@ public class Elemento {
         }
     }
     
-    private String separar(int[] d){
+    public String separar(int[] d){
         String dat = "";
         
         for (int i = 0; i < d.length; i++) {
